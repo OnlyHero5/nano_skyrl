@@ -125,6 +125,8 @@ Phase 5
 | gh CLI not installed (cannot create repo via gh) | 1 | 改用 GitHub Web 或 API + PAT |
 | git ls-remote failed (Host key verification failed) | 1 | 需要将 github.com 加入 known_hosts |
 | ssh -T git@github.com timed out | 1 | 网络/SSH 配置待确认，可能阻塞推送 |
+| ssh keyscan failed (unsupported KEX) | 1 | 改用 ssh -o KexAlgorithms 直连并 accept-new |
+| git push failed (Repository not found) | 1 | 需在 GitHub 创建仓库 nano_skyrl |
 
 ## Notes
 <!-- 
@@ -137,6 +139,7 @@ Phase 5
 - Update phase status as you progress: pending → in_progress → complete
 - Re-read this plan before major decisions (attention manipulation)
 - Log ALL errors - they help avoid repetition
+
 
 
 

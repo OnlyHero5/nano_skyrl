@@ -79,6 +79,14 @@
 - Files created/modified:
   - task_plan.md
   - progress.md
+### Update: SSH 验证与推送尝试
+- **Status:** blocked
+- Actions taken:
+  - 通过 SSH 验证 GitHub 认证（accept-new + 指定 KEX）
+  - 尝试 push 到 origin/main（仓库未创建导致失败）
+- Files created/modified:
+  - task_plan.md
+  - progress.md
 ## Test Results
 | Test | Input | Expected | Actual | Status |
 |------|-------|----------|--------|--------|
@@ -92,6 +100,8 @@
 | 2026-02-05 | gh CLI not installed | 1 | 改用 GitHub Web 或 API + PAT |
 | 2026-02-06 | git ls-remote origin failed (Host key verification failed) | 1 | 需添加 github.com 到 known_hosts |
 | 2026-02-06 | ssh -T git@github.com timeout | 1 | 网络或 SSH 配置待确认 |
+| 2026-02-06 | ssh-keyscan failed (unsupported KEX) | 1 | 改用 ssh -o KexAlgorithms 直连并 accept-new |
+| 2026-02-06 | git push failed (Repository not found) | 1 | 需创建 GitHub 仓库 nano_skyrl |
 
 ## 5-Question Reboot Check
 | Question | Answer |
@@ -101,6 +111,7 @@
 | What's the goal? | 输出 nano-SkyRL 中文设计文档 |
 | What have I learned? | See findings.md |
 | What have I done? | 完成设计文档并交付 |
+
 
 
 
