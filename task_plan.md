@@ -127,6 +127,7 @@ Phase 5
 | ssh -T git@github.com timed out | 1 | 网络/SSH 配置待确认，可能阻塞推送 |
 | ssh keyscan failed (unsupported KEX) | 1 | 改用 ssh -o KexAlgorithms 直连并 accept-new |
 | git push failed (Repository not found) | 1 | 需在 GitHub 创建仓库 nano_skyrl |
+| git push succeeded (origin/main) | 1 | 完成远端推送 |
 
 ## Notes
 <!-- 
@@ -139,6 +140,7 @@ Phase 5
 - Update phase status as you progress: pending → in_progress → complete
 - Re-read this plan before major decisions (attention manipulation)
 - Log ALL errors - they help avoid repetition
+
 
 
 
