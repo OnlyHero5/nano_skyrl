@@ -53,6 +53,7 @@
 | Issue | Resolution |
 |-------|------------|
 | 无法提交设计文档 | nano_SkyRL 目录无 .git，未执行提交 |
+| GitHub CLI 未安装（无法自动创建远端仓库） | 计划改用 GitHub Web 或 API + PAT |
 
 ## Resources
 <!-- 
@@ -62,6 +63,7 @@
 -->
 <!-- URLs, file paths, API references -->
 - Project root: `H:\src\nano_SkyRL`
+- Local git initialized: `H:\src\nano_SkyRL\.git`
 - Status doc: `H:\src\nano_SkyRL\docs\STATUS.md`
 - Benchmarks (对齐主流口径): HLE, BrowseComp, DeepSearchQA, SWE-bench Verified, SWE-bench Multilingual
 

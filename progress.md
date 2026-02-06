@@ -63,6 +63,13 @@
   - docs/STATUS.md
   - findings.md
   - task_plan.md
+### Update: Git 初始化与提交
+- **Status:** complete
+- Actions taken:
+  - 初始化本地 Git 仓库并完成首个提交
+  - 发现未安装 GitHub CLI，待用 Web/API 创建远端仓库
+- Files created/modified:
+  - .git/
 ## Test Results
 | Test | Input | Expected | Actual | Status |
 |------|-------|----------|--------|--------|
@@ -73,6 +80,7 @@
 |-----------|-------|---------|------------|
 | 2026-02-05 | session-catchup.py not found in .claude path | 1 | 改用 .codex 路径执行 |
 | 2026-02-05 | PowerShell ParserError when inserting status doc line | 1 | 改用单引号避免反引号转义 |
+| 2026-02-05 | gh CLI not installed | 1 | 改用 GitHub Web 或 API + PAT |
 
 ## 5-Question Reboot Check
 | Question | Answer |
@@ -82,6 +90,7 @@
 | What's the goal? | 输出 nano-SkyRL 中文设计文档 |
 | What have I learned? | See findings.md |
 | What have I done? | 完成设计文档并交付 |
+
 
 
 
