@@ -123,6 +123,8 @@ Phase 5
 | session-catchup.py not found in `.claude` path | 1 | 使用 `.codex` 目录下的脚本路径执行 |
 | PowerShell ParserError when inserting status doc line | 1 | 改用单引号避免反引号转义 |
 | gh CLI not installed (cannot create repo via gh) | 1 | 改用 GitHub Web 或 API + PAT |
+| git ls-remote failed (Host key verification failed) | 1 | 需要将 github.com 加入 known_hosts |
+| ssh -T git@github.com timed out | 1 | 网络/SSH 配置待确认，可能阻塞推送 |
 
 ## Notes
 <!-- 
@@ -135,6 +137,7 @@ Phase 5
 - Update phase status as you progress: pending → in_progress → complete
 - Re-read this plan before major decisions (attention manipulation)
 - Log ALL errors - they help avoid repetition
+
 
 
 

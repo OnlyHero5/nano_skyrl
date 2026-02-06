@@ -70,6 +70,15 @@
   - 发现未安装 GitHub CLI，待用 Web/API 创建远端仓库
 - Files created/modified:
   - .git/
+### Update: 远端仓库与 SSH 连接
+- **Status:** blocked
+- Actions taken:
+  - 设置默认分支为 main
+  - 配置远端 origin 为 git@github.com:OnlyHero5/nano_skyrl.git
+  - 检查 SSH 连接（出现 host key 与超时问题）
+- Files created/modified:
+  - task_plan.md
+  - progress.md
 ## Test Results
 | Test | Input | Expected | Actual | Status |
 |------|-------|----------|--------|--------|
@@ -81,6 +90,8 @@
 | 2026-02-05 | session-catchup.py not found in .claude path | 1 | 改用 .codex 路径执行 |
 | 2026-02-05 | PowerShell ParserError when inserting status doc line | 1 | 改用单引号避免反引号转义 |
 | 2026-02-05 | gh CLI not installed | 1 | 改用 GitHub Web 或 API + PAT |
+| 2026-02-06 | git ls-remote origin failed (Host key verification failed) | 1 | 需添加 github.com 到 known_hosts |
+| 2026-02-06 | ssh -T git@github.com timeout | 1 | 网络或 SSH 配置待确认 |
 
 ## 5-Question Reboot Check
 | Question | Answer |
@@ -90,6 +101,7 @@
 | What's the goal? | 输出 nano-SkyRL 中文设计文档 |
 | What have I learned? | See findings.md |
 | What have I done? | 完成设计文档并交付 |
+
 
 
 
